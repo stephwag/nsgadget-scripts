@@ -14,3 +14,5 @@ For example, if you want to duplicate Royal Halberds by desyncing them with Roya
 <img src="https://i.imgur.com/XzdFYbh.jpg" width="400">
 
 With the game still paused, plug in the Teensy with this script. It will now desync and duplicate weapons indefinitely.
+
+https://user-images.githubusercontent.com/4019335/124390972-2ead3e00-dcbc-11eb-8f8a-26ab36052a59.mp4
