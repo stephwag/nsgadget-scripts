@@ -15,13 +15,13 @@ void pressButton(NSButtons b, int d)
 void pressButtonPrecise(NSButtons b, int numFrames)
 {
   noInterrupts();
-  uint32_t wait_begin_at = systick_millis_count;
+  uint32_t beginMillis = systick_millis_count;
   interrupts();
   pressButton(b, FRAME_MS);
   noInterrupts();
-  uint32_t delay_time = int((FRAME_MS * numFrames) - (systick_millis_count - wait_begin_at));
+  uint32_t delayMillis = int((FRAME_MS * numFrames) - (systick_millis_count - beginMillis));
   interrupts();
-  delay(delay_time); 
+  delay(delayMillis);
 }
 
 void pressTriggers(int d)
